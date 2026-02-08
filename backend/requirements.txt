@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+opencv-python
+tensorflow-cpu
+keras
+numpy
+websockets
+mediapipe
+onnxruntime
+huggingface_hub
