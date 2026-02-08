@@ -1,10 +1,15 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
+import sys
+import os
+
+# Fix for module imports when running from project root
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from routes import api_routes
 from voice_detection import voice_router
 import uvicorn
-import os
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
