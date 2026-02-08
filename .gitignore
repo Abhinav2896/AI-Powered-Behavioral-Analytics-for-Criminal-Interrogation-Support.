@@ -11,4 +11,4 @@ build/
 *.safetensors
 *.h5
 *.pth
-
+backend/data/logs/
